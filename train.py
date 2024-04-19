@@ -18,7 +18,7 @@ from datetime import datetime
 from pytorch_lightning import seed_everything
 from pytorch_lightning.loggers import TensorBoardLogger, tensorboard
 import argparse
-from DRITPP_2 import DRIT 
+from model import mDRITpp
 from options.train_options import TrainOptions
 from load_data import load_data
 home = expanduser("~")
