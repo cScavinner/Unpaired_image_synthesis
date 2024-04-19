@@ -19,8 +19,6 @@ from pytorch_lightning import seed_everything
 from pytorch_lightning.loggers import TensorBoardLogger, tensorboard
 import argparse
 from DRITPP_2 import DRIT 
-from Degradation_nets import Degradation_paired, Degradation_unpaired
-from Reconstruction_nets import Reconstruction_paired, Reconstruction_unpaired
 from options.train_options import TrainOptions
 from load_data import load_data
 home = expanduser("~")
