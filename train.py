@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     num_epochs = args.epochs
     gpu = args.gpu
-    num_workers = args.workers#multiprocessing.cpu_count()*
+    num_workers = args.workers
     network=args.network
     sampler=args.sampler
     training_batch_size = args.batch_size
