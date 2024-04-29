@@ -6,7 +6,7 @@ import warnings
 
 class BaseOptions():
     '''
-    Classe qui définit les options de base  utilisées à la fois pour l'entraînement et pour le test
+    Class that defines the basic options used for both training and testing
     '''
 
     def __init__(self):
