@@ -1478,7 +1478,7 @@ class Loss_DRIT_custom_last_version(nn.Module):
 ######### MODEL ##########################################################################################################################################################################################
 ##########################################################################################################################################################################################################
 
-class DRIT(pl.LightningModule):
+class mDRITpp(pl.LightningModule):
     #def __init__(self, criterion, learning_rate, optimizer_class, dataset, prefix, segmentation, gpu, mode, lambda_contrastive=1, reduce=False,  n_channels = 1, n_classes = 1, n_features = 32):
     def __init__(self, opt, prefix, isTrain):
         super().__init__()
