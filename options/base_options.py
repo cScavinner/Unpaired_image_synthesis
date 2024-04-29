@@ -50,11 +50,9 @@ class BaseOptions():
         setattr(opt, 'saving_path', recording_path+'/')
 
         if (opt.static_path!=None and opt.dynamic_path!=None):
-            #setattr(opt, 'data', 'custom')
             assert (opt.data=='custom' or 'custom_simulate'), "If you are specifying paths for Equinus images, please set the 'data' option to 'custom' or 'cutom_simulate'"
 
         if opt.use_segmentation_network:
-            #setattr(opt, 'data', 'segmentation_equinus_256')
             if opt.data == 'custom' or opt.data == "custom_simulate":
                 assert opt.seg_path is not None, "Please define the path to the segmentations while using segmentation network. Use --seg_path argument"
             else:
@@ -66,7 +64,6 @@ class BaseOptions():
         to_save = ''
         text = ''
         text += '----------------- Options ---------------\n'
-        # for k, v in sorted(vars(opt).items()):
         for k, v in sorted(vars(opt).items()):
             comment = ''
             default = self.parser.get_default(k)
